@@ -1,17 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Client", "Application\Application.Client\Application.Client.csproj", "{D71D39DE-1B3F-46B2-BC46-FD7A0C45B66F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Client", "Application.Client\Application.Client.csproj", "{D71D39DE-1B3F-46B2-BC46-FD7A0C45B66F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Shared", "Application\Application.Shared\Application.Shared.csproj", "{DD0BC74C-405D-4E13-AB83-A86095772CD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Shared", "Application.Shared\Application.Shared.csproj", "{DD0BC74C-405D-4E13-AB83-A86095772CD8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Server.Local", "Application\Application.Server.Local\Application.Server.Local.csproj", "{66644859-F2C7-432A-869E-9AB75D1EE504}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Server.Local", "Application.Server.Local\Application.Server.Local.csproj", "{66644859-F2C7-432A-869E-9AB75D1EE504}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Server", "Application\Application.Server\Application.Server.csproj", "{FE9273E2-C653-4826-B862-8DBB49BCB3B4}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Server.AWS", "Application\Application.Server.AWS\Application.Server.AWS.csproj", "{2843600F-895F-40AC-BA1B-B3FF69FB3927}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Server", "Application.Server\Application.Server.csproj", "{FE9273E2-C653-4826-B862-8DBB49BCB3B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +33,6 @@ Global
 		{FE9273E2-C653-4826-B862-8DBB49BCB3B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE9273E2-C653-4826-B862-8DBB49BCB3B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE9273E2-C653-4826-B862-8DBB49BCB3B4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2843600F-895F-40AC-BA1B-B3FF69FB3927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2843600F-895F-40AC-BA1B-B3FF69FB3927}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2843600F-895F-40AC-BA1B-B3FF69FB3927}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2843600F-895F-40AC-BA1B-B3FF69FB3927}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
