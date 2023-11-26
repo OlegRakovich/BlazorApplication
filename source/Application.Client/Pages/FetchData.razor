@@ -1,6 +1,6 @@
 @page "/fetchdata"
-@using Application.Shared
-@inject BackendGateway Backend
+@using Application.SDK
+@inject Backend Backend
 
 <h1>Weather forecast</h1>
 
@@ -36,11 +36,10 @@ else
 }
 
 @code {
-    private WeatherForecast[] forecasts = Array.Empty<WeatherForecast>();
+    WeatherForecast[] forecasts = Array.Empty<WeatherForecast>();
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await Backend.GetForecasts();
+        forecasts = await Backend.WeatherForecasts.Get();
     }
-
 }

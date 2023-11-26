@@ -1,3 +1,4 @@
+using Application.SDK;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
 namespace Application.Client;
@@ -10,9 +11,9 @@ public class Program
         builder.RootComponents.Add<App>("app");
 
         builder.Services
-            .AddSingleton<HttpClient>()
-            .AddSingleton<BackendClient>()
-            .AddSingleton<BackendGateway>();
+            .AddSingleton<HttpClient, BackendClient>()
+            .AddSingleton<Backend>()
+            .AddSingleton<WeatherForecasts>();
 
         await builder.Build().RunAsync();
     }

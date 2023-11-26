@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Application.Shared\Application.Shared.csproj" />
+    <ProjectReference Include="..\Application.SDK\Application.SDK.csproj" />
   </ItemGroup>
 
 </Project>
