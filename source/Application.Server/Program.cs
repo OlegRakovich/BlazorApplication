@@ -1,7 +1,6 @@
-﻿namespace Application.Server
+﻿namespace Application.Server;
+
+public class Program
 {
-    public class Program
-    {
-        public static void Main() { }
-    }
+    public static void Main() { }
 }

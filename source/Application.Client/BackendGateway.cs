@@ -1,17 +1,15 @@
 ﻿using Application.Shared;
 using System.Net.Http.Json;
-using System.Threading.Tasks;
 
-namespace Application.Client
+namespace Application.Client;
+
+public class BackendGateway
 {
-    public class BackendGateway
-    {
-        readonly BackendClient Backend;
+    readonly BackendClient Backend;
 
-        public BackendGateway(BackendClient client)
-            => Backend = client;
+    public BackendGateway(BackendClient client)
+        => Backend = client;
 
-        public Task<WeatherForecast[]> GetForecasts()
-            => Backend.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
-    }
+    public async Task<WeatherForecast[]> GetForecasts()
+        => await Backend.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast") ?? throw new Exception("Unexpected response received");
 }
