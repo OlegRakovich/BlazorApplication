@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Application.Server
 {
-    public abstract class Startup
+    public abstract class StartupBase
     {
         public void ConfigureServices(IServiceCollection services)
         {
@@ -21,7 +21,11 @@ namespace Application.Server
             app.UseEndpoints(ConfigureEndpoints);
         }
 
-        protected abstract void RegisterServices(IServiceCollection services);
+        protected virtual void RegisterServices(IServiceCollection services)
+        {
+            services.AddControllers();
+            services.AddMvc();
+        }
 
         protected abstract void ConfigureRegisteredServices(IApplicationBuilder app, IWebHostEnvironment env);
 

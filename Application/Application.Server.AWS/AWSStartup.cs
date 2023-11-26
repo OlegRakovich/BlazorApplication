@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Application.Server.AWS
 {
-    public class AWSStartup : Startup
+    public class AWSStartup : StartupBase
     {
         protected override void RegisterServices(IServiceCollection services)
         {

@@ -5,10 +5,11 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Application.Server.Local
 {
-    public class LocalStartup : Startup
+    public class LocalStartup : StartupBase
     {
         protected override void RegisterServices(IServiceCollection services)
         {
+            base.RegisterServices(services);
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
