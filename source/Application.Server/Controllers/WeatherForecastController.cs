@@ -7,10 +7,7 @@ namespace Application.Server.Controllers;
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
-    private static readonly string[] Summaries = new[]
-    {
-        "Freezing", "Sweltering", "Scorching", "Unbearable"
-    };
+    static readonly string[] Summaries = ["Freezing", "Sweltering", "Scorching", "Unbearable"];
 
     [HttpGet]
     public IEnumerable<WeatherForecast> Get()
